@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Register setUserDetails={setUserDetails}/>}/>
           <Route path="/login" element={<Login setUserDetails={setUserDetails}/>}/>
           <Route path="/books" element={<Book />} />
-          <Route path="/home" element={<Home userDetails={userDetails}/>} />
+          <Route path="/home" element={<Home userDetails={userDetails} setUserDetails={setUserDetails}/>} />
         </Routes>
       </div>
     
